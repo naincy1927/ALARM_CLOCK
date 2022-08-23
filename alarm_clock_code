@@ -1,0 +1,13 @@
+import os #library to have access of your pc
+import datetime # library to manage the date and time
+import time
+n = 1
+c,b,a = input("ENTER THE DATE :- ").split("/")
+hr,minn,sec = input("ENTER THE TIME :- ").split(":")
+shedule_date = datetime.date(int(a),int(b),int(c))
+while n>0:
+    if time.localtime().tm_hour == int(hr) and time.localtime().tm_min == int(minn) and time.localtime().tm_sec == int(sec) :
+        os.startfile("C:\\Users\\naincy\\Desktop\\DATA_SET_\\2017-04-14_-_Happy_Dreams_-_David_Fesliyan.mp3")
+        break
+    else :
+        n+=1
